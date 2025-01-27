@@ -1,4 +1,3 @@
-export OPENAI_API_KEY=YOUR_OPEN_API_KEY=key
 import streamlit as st
 import os
 import json5
@@ -12,6 +11,17 @@ from utils import *
 import base64
 from PIL import Image
 from bs4 import BeautifulSoup
+import os
+
+# Manually set the API key
+os.environ['OPENAI_API_KEY'] = 'your_openai_api_key'
+
+# Use the key
+api_key = os.getenv('OPENAI_API_KEY')
+
+if not api_key:
+    raise ValueError("OPENAI_API_KEY is not set.")
+
 
 
 
