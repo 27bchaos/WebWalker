@@ -1,3 +1,4 @@
+export OPENAI_API_KEY=YOUR_OPEN_API_KEY=key
 import streamlit as st
 import os
 import json5
