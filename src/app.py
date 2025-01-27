@@ -12,7 +12,7 @@ from PIL import Image
 from bs4 import BeautifulSoup
 
 # Manually set the API key
-os.environ['OPENAI_API_KEY'] = 'your_openai_api_key'
+os.environ['OPENAI_API_KEY'] = '020202'
 
 # Validate required environment variables
 if 'DASHSCOPE_API_KEY' not in os.environ and ('OPENAI_API_KEY' not in os.environ or 'OPENAI_MODEL_SERVER' not in os.environ):
